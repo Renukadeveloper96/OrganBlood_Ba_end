@@ -53,6 +53,7 @@ public class SellerServiceImpl1 implements SellerService1 {
 		sellerRepository1.save(seller);
 		// save to user
 		// create the token
+		//changed in seller service
 		final AuthenticationToken authenticationToken = new AuthenticationToken(seller);
 		authenticationService.saveConfirmationToken(authenticationToken);
 		ResponseDto responseDto = new ResponseDto(status = "success", message = "Registration successful");
